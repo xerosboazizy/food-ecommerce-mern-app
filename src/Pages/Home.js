@@ -7,11 +7,12 @@ import SliderSlick from '../Components/SliderSlick'
 import drawsoup from ".././Images/drawsoup.png"
 import plantainbeans from ".././Images/plantainbeans.png"
 import coconutrice from ".././Images/coconutrice.png"
+import FoodblogCard from '../Components/FoodblogCard'
 
 const Home = () => {
     return (
         <>
-            <section classname="home-wrapper-1 py-3">
+            <section classname="home-wrapper py-3">
                 <div className="container-lg">
                     <div className="row">
                         <div className="col-12 track-home">
@@ -40,7 +41,7 @@ const Home = () => {
             </section>
 
 
-            <section className="home-wrapper-3 py-3">
+            <section className="home-wrapper py-3">
                 <div className="container-lg">
                     <div className="row">
                         <div className="col-12">
@@ -52,15 +53,17 @@ const Home = () => {
             </section>
 
 
-            <section className="home-wrapper-3 py-3">
+            <section className="hotdeal-wrapper py-3">
                 <div className="container-lg">
-
-                    <div className="row g-3">
-                        <h3>Hot Deals</h3>
-
-                        <div className=' row home-food_card col-3 bg-danger'>
-                            <FoodCard />
+                    <div className="row">
+                        <div className="col-12">
+                            <h3>Hot Deals</h3>
                         </div>
+
+
+
+                        <FoodCard />
+
 
 
                     </div>
@@ -111,6 +114,28 @@ const Home = () => {
                     </div>
                 </div>
 
+            </section>
+
+
+
+            <section className="hotdeal-wrapper py-3">
+                <div className="container-lg">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">Our Latest News</h3>
+                        </div>
+
+
+
+                        <FoodblogCard />
+                        <FoodblogCard />
+                        <FoodblogCard />
+                        <FoodblogCard />
+
+
+
+                    </div>
+                </div>
             </section>
         </>
     )

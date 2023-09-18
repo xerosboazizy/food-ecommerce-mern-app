@@ -44,6 +44,17 @@ a {
 }
 
 
+
+.mainbutton {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #1f6357;
+  color: #fff;
+  cursor: pointer;
+  transition: none;
+  border: none;
+}
+
 .orderbutton {
   margin: 10px;
   padding: 5px 10px;
@@ -55,7 +66,8 @@ a {
   border: none;
 }
 
-.orderbutton:hover {
+.orderbutton:hover,
+.mainbutton:hover {
   border: none;
   background-color: #d2691e;
   color: #fff;
@@ -97,7 +109,13 @@ a {
 
 }
 
-
+.section-heading {
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: var(--greenblue-color);
+}
 
 
 /*header section starts here*/
@@ -412,7 +430,7 @@ a {
 
 
 
-.home-wrapper-3 {
+.home-wrapper {
   margin: 50px 0;
 
 }
@@ -577,27 +595,67 @@ a {
 
 
 
+/*blog card start here*/
+.bloglandley {
+  height: 22rem;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: green;
+}
+
+.blog-card {
+  height: 60%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  object-fit: contain;
+
+}
+
+.blog-card img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+.blog-content {
+  height: 40%;
+  padding: 10px;
+}
+
+.blog-content .date {
+  font-size: 13px;
+  line-height: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--graylux-color);
+  padding: 0;
+}
+
+.blog-content h5 {
+  font-size: 16px;
+  color: #1f6357;
+}
+
+.blog-content .blogdesc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--graylux-color);
+}
 
 
 
 
-
-
-
-
-
-
-
-
+/*blog card ends here*/
 
 /*FoodCard Start here*/
 
-.roko {
-  height: 16rem;
-  width: 14rem;
-  padding: 10px;
-  background-color: red;
-}
 
 .food-card {
   background-color: #fff;
@@ -641,26 +699,25 @@ a {
   border-radius: 5px;
 }
 
-.food-image {
-  margin-bottom: 5px;
-  object-fit: contain;
+.food-card .food-image {
   height: 70%;
   width: 100%;
 }
 
-.food-image>img:last-child {
-  display: none;
+.food-card .food-image img {
+  object-fit: contain;
+}
 
+.food-card .food-image>img:last-child {
+  display: none;
 }
 
 .food-card:hover .food-image>img:nth-child(1) {
   display: none;
-  transition: 0.3s;
 }
 
 .food-card:hover .food-image>img:last-child {
   display: block;
-  transition: 0.3s;
 }
 
 
@@ -670,17 +727,17 @@ a {
   transition: 0.3s;
 }
 
-.action-bar-icon img {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 10px;
+.foodcardicon {
+  width: 22px;
+  height: 22px;
   background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 .foodcardicon img {
-  width: 22px;
-  height: 22px;
-
+  width: 100%;
+  height: 100%;
 }
 
 .wishlist-img {

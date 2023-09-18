@@ -6,6 +6,7 @@ import nobywishlist from ".././Images/nobgwishlist.png"
 import nobgeye from ".././Images/nobgeye.png"
 import { Link, useLocation } from 'react-router-dom';
 import pic1 from ".././Images/pic1.png"
+import pic3 from ".././Images/pic3.png"
 import pic2 from ".././Images/pic2.png"
 import { BsSuitHeart } from "react-icons/bs"
 
@@ -15,14 +16,14 @@ const FoodCard = (props) => {
     let location = useLocation()
     return (
         <>
-            <div className={`  ${location.pathname == "/menu" ? `gr-${grid} ` : "col-3 roko"}`}>
+            <div className={`${location.pathname == "/menu" ? `gr-${grid} ` : "col-3"}`}>
                 <Link className="food-card position-relative ">
                     <div className="wishlist-img position-absolute">
                         <Link className='wishicon-link'><BsSuitHeart className='wish-link-icon' /></Link>
                     </div>
                     <div className="food-image">
                         <img src={pic1} alt="" className='img-fluid' />
-                        <img src={pic2} alt="" className='img-fluid' />
+                        <img src={pic3} alt="" className='img-fluid' />
                     </div>
                     <div className="food-details">
                         <h6 className="foodcategory">Soup</h6>
@@ -42,7 +43,7 @@ const FoodCard = (props) => {
                         </div>
                     </div>
                     <div className="action-bar position-absolute">
-                        <div className='d-flex flex-column action-bar-icon'>
+                        <div className='d-flex flex-column'>
                             <Link className='foodcardicon'><img src={nobgcart} alt="cart" /></Link>
                             <Link className='foodcardicon'><img src={nobgeye} alt="view" /> </Link>
                         </div>
